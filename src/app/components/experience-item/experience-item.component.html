@@ -1,0 +1,19 @@
+<div class="py-2 px-8 my-8 border-l border-white" *ngFor="let item of items">
+    <div class="flex items-center">
+        <div class="flex flex-col min-w-[270px]">
+            <div class="text-gray-400">{{item.workDate}}</div>
+            <div class="flex mt-2">                
+                <div class=""><img src="{{item.logo}}" alt="" srcset="" width="45px"></div>
+                <div class="ml-4">
+                    <div class="text-gray-400">{{item.companyName}}</div>
+                    <div class="font-bold">{{item.jobTitle}}</div>
+                </div>                    
+            </div>                      
+        </div>
+        <div class="ml-8">
+            <ul class="list-disc" *ngFor="let work of item.work">
+                <li>{{work}}</li>               
+            </ul>
+        </div>
+    </div>
+</div>

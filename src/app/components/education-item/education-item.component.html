@@ -1,0 +1,12 @@
+<div class="flex py-4">
+    <div class="text-black bg-white p-8 mx-2 w-[350px]" *ngFor="let item of items">
+        <div class="flex items-center">
+            <div><img src="{{item.logo}}" alt="" srcset="" width="45px"></div>
+            <div class="ml-5 font-bold ">{{item.name}}</div>
+        </div>
+        <div class="pt-2">
+            <strong>{{item.speciality}}</strong>            
+            <p class="text-gray-400 pt-2">{{item.date}}</p>
+        </div>
+    </div>
+</div>
